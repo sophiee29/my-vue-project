@@ -6,7 +6,7 @@ export const usepeliculasStore= defineStore("peliculas",()=>{
     const API_URL = "https://devsapihub.com/api-movies";
       const getpeli = async () => {
         try {
-          const response = await fetch(API_URL); // hacemos la request
+          const response = await fetch(API_URL); // hacemos la reques
           if (!response.ok) {
             throw new Error("Estado: " + response.status);
           }
