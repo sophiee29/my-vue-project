@@ -1,5 +1,7 @@
 <script setup>
-
+import Home from '../views/Home.vue';
+import AddMovie from '../views/AddMovie.vue';
+import {  RouterLink } from 'vue-router';
 </script>
 <template>
 
@@ -12,10 +14,10 @@
             <ul class="lista">
                 <!--creo enlaces con router link-->
                 <li class="item">
-                    <router-link class="" to="/">Home</router-link><!--carga la pagina home-->
+                    <router-link class="" :to="{name:'home'}">Home</router-link><!--carga la pagina home-->
                 </li>
                 <li class="item">
-                    <router-link class="" to="/">AddMovie</router-link><!--carga la pagina de movies, formulario para cargar peliculas-->
+                    <router-link class="" :to="{name:'addmovie'}">Add Movie</router-link><!--carga la pagina de movies, formulario para cargar peliculas--><!--funcionaa-->
                 </li>
             </ul>
         </nav>

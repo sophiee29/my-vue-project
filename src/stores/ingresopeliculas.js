@@ -19,9 +19,14 @@ export const usepeliculasStore= defineStore("peliculas",()=>{
             console.error("Error al obtener películas:", err);
         }
       };
+    const getpeliById = (id) => {
+        return peliculas.value.find(pelicula => pelicula.id == id)
+    }
       return {
         peliculas,
-        getpeli
+        getpeli,
+        getpeliById
+       
       };
 })
 
